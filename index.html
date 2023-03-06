@@ -407,6 +407,25 @@
               </a>
             </div>
           </li>
+          <li class="form-footer-block">
+            <div class="form-footer-box">
+              <h2 class="footer-form-title">Subscribe</h2>
+              <div class="footer-form-pos">
+                <label>
+                  <input
+                    type="email"
+                    name="email"
+                    id="footer-email"
+                    class="form-footer-input"
+                    placeholder="E-mail "
+                /></label>
+
+                <button type="submit" class="form-footer-button">
+                  Subscribe
+                </button>
+              </div>
+            </div>
+          </li>
         </ul>
       </div>
     </footer>
@@ -424,24 +443,36 @@
         <form class="form-kontakt">
           <div class="form-field">
             <label for="name" class="form-label">Name</label>
-            <input type="text" name="name" id="Name" class="form-input" />
-            <svg class="form-icon">
-              <use href="./images/symbol-defs.svg#icon-kontakt"></use>
-            </svg>
+            <div class="pos-form-icon">
+              <input type="text" name="name" id="Name" class="form-input" />
+              <svg class="form-icon">
+                <use href="./images/symbol-defs.svg#icon-kontakt"></use>
+              </svg>
+            </div>
           </div>
 
           <div class="form-field">
-            <label for="Phone">Phone</label>
-            <input type="tel" name="Phone" id="Phone" class="form-input" />
+            <label for="Phone" class="form-label">Phone</label>
+            <div class="pos-form-icon">
+              <input type="tel" name="Phone" id="Phone" class="form-input" />
+              <svg class="form-icon">
+                <use href="./images/symbol-defs.svg#icon-phone"></use>
+              </svg>
+            </div>
           </div>
 
           <div class="form-field">
-            <label for="Email">Email</label>
-            <input type="email" name="Email" id="Email" class="form-input" />
+            <label for="Email" class="form-label">Email</label>
+            <div class="pos-form-icon">
+              <input type="email" name="Email" id="Email" class="form-input" />
+              <svg class="form-icon">
+                <use href="./images/symbol-defs.svg#icon-mail"></use>
+              </svg>
+            </div>
           </div>
 
           <div class="form-field">
-            <label for="Comment">Comment</label>
+            <label for="Comment" class="form-label">Comment</label>
             <textarea
               class="comment"
               name="comment"
@@ -450,9 +481,15 @@
             ></textarea>
           </div>
 
-          <input type="checkbox" name="accept" id="accept" />
+          <input
+            type="checkbox"
+            name="accept"
+            id="accept"
+            class="accept visually-hidden"
+          />
           <label class="label-text" for="accept"
-            >I accept the terms and conditions of the Privacy Policy</label
+            >I accept the terms and conditions of the&nbsp;
+            <a href="">Privacy Policy</a></label
           >
           <div class="button-send">
             <button type="submit" class="form-button">Send</button>
