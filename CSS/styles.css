@@ -669,7 +669,6 @@ img {
   position: fixed;
   width: 100%;
   height: 100%;
-  z-index: 100;
   top: 0;
   left: 0;
   background-color: rgba(46, 47, 66, 0.4);
@@ -684,8 +683,6 @@ img {
 }
 .modal {
   position: absolute;
-  width: 408px;
-  height: 584px;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
@@ -856,7 +853,8 @@ img {
 
 /*---------------- kontakt form----------------*/
 .form-kontakt {
-  padding: 24px;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 .form-label {
   font-family: "Roboto";
